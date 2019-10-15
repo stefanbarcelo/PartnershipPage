@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.typekit.net/rry0kyy.css">
+    <link rel="stylesheet" href="main.css">
+
+    <!-- JS CDN's-->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://connect.podium.com/widget.js" id="podium-widget"
+        data-api-token="36068c76c43925db7c516460090cb27c"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <!-- NAVIGATION-->
+        <nav id="nav" class="visible">
+            <div class="navInner wrapper">
+                <a href="index.html"><img src="images/mainLogo.svg" alt="" class="navLogo"></a>
+                <ul class="navLinkList">
+                    <li><a href="index.html" class="coolLink">Home</a></li>
+                    <li><a href="reportInfo.html" class="coolLink">The Report</a></li>
+                    <li><a href="tel: 1 (888) 838-9466" class="coolLink">Call Us</a></li>
+                    <li><a href="http://trueframe.com" target="_blank" class="coolLink">Schedule a Meeting</a></li>
+                </ul>
+                <div class="hamIcon" id="hamburgerIcon">
+                    <img src="images/hamburgerIcon.svg" alt="">
+                </div>
+            </div>
+        </nav>
+        <div class="mobileMenu" id="mobileMenu">
+            <div class="menuWrapper">
+                <img class="darkLogo" src="images/darkLogo.svg" alt="">
+                <img id="closeIcon" src="images/closeIcon.svg" class="closeIcon" alt="">
+                <ul class="menuList">
+                    <li><a href="index.html">Home</a></li>
+                    <hr>
+                    <li><a href="reportInfo.html">The Report</a></li>
+                    <hr>
+                    <li><a href="tel: 1 (888) 838-9466">Call Us</a></li>
+                    <hr>
+                    <li><a href="http://trueframe.com" target="_blank">Schedule a Meeting</a></li>
+                    <hr>
+                </ul>
+                <a href="termsOfService.html" class="littleLink">Terms of Service</a>
+                <a href="privacyPolicy.html" class="littleLink">Privacy Policy</a>
+                <article>From everybody at True360, we look forward to starting a partnership with you. | True360 is a
+                    TrueFrame Company | ©2019 TrueFrame LLC. All Rights Reserved.</article>
+            </div>
+        </div>
+
+
+        <!-- REPORT HEADER -->
+        <div id="reportHeader">
+            <div class="reportHero wrapper reveal">
+                <h1>A Complete Walkthrough of the <br><span style="font-weight: 800;">True360 Inspection Report.</span>
+                </h1>
+                <a class="mainBtnDark" href="https://admin.trueframe.com/view-report/en/gaUGdsUzNQjuO4IV5kmR"
+                    target="_blank">See Sample Report</a>&#8194;&#8194;&#8194;<a href="#pageExplainers"
+                    class="mainBtnDark">Page
+                    Explainers</a>
+                <img class="mobileReport" src="images/iphoneReport.png" alt="">
+            </div>
+        </div>
+
+
+        <!-- PAGE EXPLAINERS -->
+        <div id="pageExplainers">
+            <div class="wrapper">
+                <div class="reveal">
+                    <h4>Page Explainers</h4>
+                    <h2><a style="font-weight: 200;">We uncover the </a>full vehicle history</h2>
+                    <p>Our reports contain the true condition of every cars most crucial
+                        aspects. After our inspection, the depth and preciseness of knowledge documented
+                        in the report makes handling customer relations much easier becuase the vehicle no
+                        longer has any lingering questions about its condition behind it.</p>
+                </div>
+
+                <div class="reveal">
+                    <ul class="desktopTabs">
+                        <li v-bind:class="{ 'activeLink': reportPageIndex === 0 }" v-on:click="reportPageIndex = 0">Page
+                            1:
+                            Brief</li>
+                        <li v-bind:class="{ 'activeLink': reportPageIndex === 1 }" v-on:click="reportPageIndex = 1">Page
+                            2:
+                            Cosmetic Inspection</li>
+                        <li v-bind:class="{ 'activeLink': reportPageIndex === 2 }" v-on:click="reportPageIndex = 2">Page
+                            3:
+                            Structural Inspection</li>
+                        <li v-bind:class="{ 'activeLink': reportPageIndex === 3 }" v-on:click="reportPageIndex = 3">Page
+                            4:
+                            Certificate of Integrity</li>
+                    </ul>
+
+                    <div v-if="reportPageIndex === 0" class="pageGrid1 reveal2">
+                        <div class="pageSection">
+                            <img src="images/reportScoring.png" alt="">
+                            <h3>Overall Scoring</h3>
+                            <p>Our score is amassed by combining all inspection scores in to one general score. We also
+                                state wether or not if the vehicle has passed TrueFrames structural standards.</p>
+                        </div>
+
+
+                        <div class="pageSection">
+                            <img src="images/vehicleCondition.png" alt="">
+                            <h3>Current Condition</h3>
+                            <p>This is a condition report for before and after the inspection. It is very important to
+                                emphasize corrected damage history, such as this example to lower consumers worries.</p>
+                        </div>
+
+
+                        <div class="pageSection">
+                            <img src="images/vehicleDetails.png" alt="">
+                            <h3>Vehicle Details</h3>
+                            <p>General details about the vehicles make, model, and mileage.</p>
+                        </div>
+
+
+                        <div class="pageSection">
+                            <img src="images/inspectionDetails.png" alt="">
+                            <h3>Inspection Details</h3>
+                            <p>Every True360 report has a dated stamp of when the inspection happened and by who.</p>
+                        </div>
+                    </div>
+
+                    <div v-if="reportPageIndex === 1" class="reveal2">
+                        <div class="pageGrid2">
+                            <div class="textBox">
+                                <h3>Prior Repairs Diagram</h3>
+                                <p>This diagram highlights all of the cosmetic repairs and replacements done on the
+                                    vehicle
+                                    with an orange dot. This same sort of diagram is used for structural repairs as
+                                    well.
+                                </p>
+                            </div>
+                            <div>
+                                <img src="/images/carDiagram.png" alt="">
+                            </div>
+                        </div>
+                        <div class="pageGrid2">
+                            <div class="textBox">
+                                <h3>Exterior Body Inspection Findings</h3>
+                                <p>We inspect 22 different sections of the cars exterior, documenting if they are in
+                                    original condition, refinished, or replaced. </p>
+                            </div>
+                            <div>
+                                <img src="/images/cosmeticInspectionFindings.png" alt="">
+                            </div>
+                        </div>
+                        <div class="pageGrid2">
+                            <div class="textBox">
+                                <h3>Cosmetic Inspection Photos</h3>
+                                <p>Our technicians take photos of the exterior of the car, side panel vin sticker, and
+                                    odometer. Partnering our inspection with actual physical photos is important to
+                                    show the consumer the vehicle’s up to date condition. </p>
+                            </div>
+                            <div>
+                                <img src="/images/carImages.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div v-if="reportPageIndex === 2" class="reveal2">
+                        <div class="pageGrid2">
+                            <div class="textBox">
+                                <h3>Structural Repairs Diagram</h3>
+                                <p>This diagram highlights all of the structural damage findings on the vehicle.
+                                    Note this diagram doesnt report on the severity of the damage.
+                                </p>
+                            </div>
+                            <div>
+                                <img src="/images/structureDiagram.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="pageGrid2">
+                            <div class="textBox">
+                                <h3>Engine Bay Inspection Findings</h3>
+                                <p>We inspect 22 different sections of the cars exterior, documenting if they
+                                    are in original condition, refinished, or replaced.</p>
+                            </div>
+                            <div>
+                                <img src="/images/engineBayInspection.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="pageGrid2">
+                            <div class="textBox">
+                                <h3>Inner Body Inspection Findings</h3>
+                                <p>Our technicians take photos of the exterior of the car, side panel vin
+                                    sticker, and odometer. Partnering our inspection with actual physical
+                                    photos is important to show the consumer the vehicle’s up to date condition.</p>
+                            </div>
+                            <div>
+                                <img src="/images/innerBodyInspection.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div v-if="reportPageIndex === 3" class="reveal2">
+                        <div class="pageGrid2">
+                            <div class="textBox2">
+                                <h3>Certificate of Integrity</h3>
+                                <p>Only vehicles that pass the True360 Inspection are awarded the
+                                    Certificate of Integrity. This certificate provides the solid
+                                    assurance needed for vehicle choice validation and buying security.
+                                </p>
+                            </div>
+                            <div>
+                                <img src="/images/infinitiCertificate.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Frequently Asked Questions -->
+
+        <!-- FAQ'S-->
+        <div id="faq">
+            <div class="wrapper">
+                <h1>Frequently Asked Questions</h1>
+                <div class="container">
+                    <h2 class="faq-accordion">How do consumers see the report?</h2>
+                    <div class="faq-panel">
+                        <p>within NZ usually takes between 1-2 working days from the time the
+                        order is dispatched. We offer next day delivery for urban orders received before 12pm. Rural
+                        deliveries please allow up to an additional 2 days for delivery. During sales or promotion
+                        periods, and public holidays these delivery time-frames are subject to change.</p>
+                    </div>
+
+                    <h2 class="faq-accordion">How long does it take to upload to CarFax and AutoCheck?</h2>
+                    <div class="faq-panel">
+                        <p>within NZ usually takes between 1-2 working days from the time the
+                        order is dispatched. We offer next day delivery for urban orders received before 12pm. Rural
+                        deliveries please allow up to an additional 2 days for delivery. During sales or promotion
+                        periods, and public holidays these delivery time-frames are subject to change.</p>
+                    </div>
+
+                    <h2 class="faq-accordion">Is the Vehicle Inspection Report available 24/7 online?</h2>
+                    <div class="faq-panel">
+                        <p>within NZ usually takes between 1-2 working days from the time the
+                        order is dispatched. We offer next day delivery for urban orders received before 12pm. Rural
+                        deliveries please allow up to an additional 2 days for delivery. During sales or promotion
+                        periods, and public holidays these delivery time-frames are subject to change.</p>
+                    </div>
+
+                    <h2 class="faq-accordion">When should I expect to receive my order?</h2>
+                    <div class="faq-panel">
+                        <p>within NZ usually takes between 1-2 working days from the time the
+                        order is dispatched. We offer next day delivery for urban orders received before 12pm. Rural
+                        deliveries please allow up to an additional 2 days for delivery. During sales or promotion
+                        periods, and public holidays these delivery time-frames are subject to change.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer id="mainFooter">
+            <div class="footerGrid wrapper">
+                <div>
+                    <h4>About <span style="color: rgb(0, 166, 255)">True360</span></h4>
+                    <p>
+                        True360 is a Live Inspection Platform providing the most comprehensive cosmetic and structural
+                        report available.
+                    </p>
+                </div>
+                <div>
+                    <h4>Frequently Asked Questions</h4>
+                    <p>
+                        Have any questions about our certified inspections? Head to our FAQ page for more information.
+                    </p>
+                </div>
+                <div>
+                    <h4>Disclaimer</h4>
+                    <a href="termsOfService.html">Terms Of Service</a>
+                    <a href="privacyPolicy.html">Privacy Policy</a>
+                </div>
+                <div>
+                    <h4>Contact Us</h4>
+                    <a href="tel: +1 (888) 838-9466">+1 (888) 838-9466</a>
+                    <a href="https://trueframe.com/" target="_blank">www.trueframe.com</a>
+                </div>
+            </div>
+
+            <div class="disclaimer wrapper">
+                <p>From everybody at True360, we look forward to starting a partnership with you. | True360 is a
+                    TrueFrame
+                    Company | ©2019 TrueFrame LLC. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- FUNCTION JS SCRIPTS -->
+    <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+    <script src="script.js"></script>
+    <script src="showNav.js"></script>
+    <script src="accordion.js"></script>
+    <script>
+        const app = new Vue({
+            el: "#app",
+            data: {
+                "reportPageIndex": 0
+            },
+            mounted: function () {
+                console.info("hello/1")
+            },
+            methods: {
+
+            }
+        })
+    </script>
+    <script>
+        window.sr = ScrollReveal({ reset: true });
+        sr.reveal('.reveal', { opacity: 0, duration: 1000, reset: false }); 
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34.491" height="38.781" viewBox="0 0 34.491 38.781">
+  <g id="Group_139" data-name="Group 139" transform="translate(-406.72 -7587.059)">
+    <g id="Group_135" data-name="Group 135" transform="translate(-1.28 6.059)">
+      <rect id="Rectangle_48" data-name="Rectangle 48" width="21.913" height="38.781" rx="2" transform="translate(414.289 7581)" fill="#2e71f2"/>
+      <rect id="Rectangle_52" data-name="Rectangle 52" width="34.491" height="32.492" transform="translate(408 7584.144)" fill="#2e71f2" opacity="0.2"/>
+      <path id="Rectangle_49" data-name="Rectangle 49" d="M2,0H19.913a2,2,0,0,1,2,2V3.144a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V2A2,2,0,0,1,2,0Z" transform="translate(414.289 7581)" fill="#00b2ff"/>
+      <path id="Rectangle_51" data-name="Rectangle 51" d="M1.048,0h9.433A1.048,1.048,0,0,1,11.53,1.048v0a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0v0A1.048,1.048,0,0,1,1.048,0Z" transform="translate(431.01 7585.192) rotate(180)" fill="#00b2ff"/>
+      <path id="Rectangle_50" data-name="Rectangle 50" d="M2,0H19.913a2,2,0,0,1,2,2V3.144a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V2A2,2,0,0,1,2,0Z" transform="translate(436.202 7619.781) rotate(180)" fill="#00b2ff"/>
+      <path id="Path_41" data-name="Path 41" d="M2486.77,7531h6.354" transform="translate(-2064.666 52.096)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="0.5"/>
+      <circle id="Ellipse_7" data-name="Ellipse 7" cx="3.144" cy="3.144" r="3.144" transform="translate(417.025 7586.241)" fill="#fff" opacity="0.385"/>
+      <circle id="Ellipse_10" data-name="Ellipse 10" cx="3.144" cy="3.144" r="3.144" transform="translate(433.466 7614.54) rotate(180)" fill="#fff" opacity="0.385"/>
+      <circle id="Ellipse_8" data-name="Ellipse 8" cx="2.096" cy="2.096" r="2.096" transform="translate(418.099 7587.289)" fill="#fff"/>
+      <circle id="Ellipse_9" data-name="Ellipse 9" cx="2.096" cy="2.096" r="2.096" transform="translate(432.391 7613.493) rotate(180)" fill="#fff"/>
+      <rect id="Rectangle_53" data-name="Rectangle 53" width="8.385" height="6.289" rx="1" transform="translate(425.025 7586.241)" fill="#fff" opacity="0.42"/>
+      <rect id="Rectangle_58" data-name="Rectangle 58" width="8.385" height="6.289" rx="1" transform="translate(425.465 7614.54) rotate(180)" fill="#fff" opacity="0.42"/>
+      <rect id="Rectangle_54" data-name="Rectangle 54" width="15.722" height="6.289" rx="1" transform="translate(417.384 7593.578)" fill="#fff" opacity="0.42"/>
+      <rect id="Rectangle_57" data-name="Rectangle 57" width="15.722" height="6.289" rx="1" transform="translate(417.384 7600.915)" fill="#fff" opacity="0.42"/>
+      <rect id="Rectangle_55" data-name="Rectangle 55" width="13.626" height="4.193" rx="1" transform="translate(418.432 7594.625)" fill="#fff"/>
+      <rect id="Rectangle_56" data-name="Rectangle 56" width="13.626" height="4.193" rx="1" transform="translate(418.432 7601.963)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

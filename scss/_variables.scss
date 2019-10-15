@@ -1,0 +1,84 @@
+// COLORS
+$BLUE: rgb(0, 51, 255);
+$SKY: rgb(0, 195, 255);
+$STONE: rgb(25, 25, 25);
+$SMOKE: rgb(192, 192, 192);
+$TEXT: rgb(110,110,110);
+$ORANGE: rgb(255, 136, 0);
+
+
+// SCREEN SIZES
+$breakXS: 375px;
+$breakSmall: 768px;
+$breakLarge: 860px;
+$breakExtraLarge: 1300px;
+
+
+@mixin respondTo($media) {
+
+  @if $media == mobileXS {
+    @media only screen and (max-width: $breakXS) { @content; }
+  }
+
+  @if $media == mobile {
+    @media only screen and (max-width: $breakSmall) { @content; }
+  }
+  
+  @else if $media == laptop {
+    @media only screen and (max-width: $breakExtraLarge){ @content; }
+  }
+}
+
+
+// TRANSITION
+$TRANS: all .2s ease-in-out;
+$CUBIC_TRANS: transform 0.4s cubic-bezier(0.86,0,0.07,1),opacity 0.4s, background-color 0.4s ease-in-out;
+
+// MIXINS
+@mixin gradient {
+  background: linear-gradient(0deg, rgb(0, 4, 74) 0%, rgb(0, 0, 25) 100%);
+}
+@mixin boxShadow {
+    box-shadow: 0 20px 12px -15px rgba(0, 0, 0, .2);
+}
+
+@mixin underlineLink {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  color: white;
+  opacity: .3;
+  transition: opacity 0.4s ease-in-out;
+  font-size: 16px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    transform-origin: 0 0;
+    transform-origin: 100% 0;
+    transform: scaleX(0);
+    transition: $CUBIC_TRANS;
+    cursor: pointer;
+  }
+
+  &:hover {
+
+    &::before {
+      transform-origin: 0 0;
+      transform: scaleX(1);
+      cursor: pointer;
+    }
+  }
+
+  @include respondTo(laptop) {
+    font-size: 14px;
+    &:before {
+      top: 26px;
+    }
+  }
+}

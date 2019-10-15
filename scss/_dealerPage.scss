@@ -722,16 +722,18 @@
 }
 @include respondTo(mobile) {
   #widgets {
-    padding: 100px 0;
+    padding: 100px 0 50px;
     .mediaGrid {
       grid-template-columns: 1fr;
+      margin-top: 0;
+      margin-bottom: 50px;
 
       .gridContent {
         width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 0;
 
         .borderSpan {
-          margin-top: 30px;
+          margin-top: 0;
         }
       }
     }

@@ -3,10 +3,12 @@ $(function () {
   $("#hamburgerIcon").click(function () {
     // remove classes from all
     $("#mobileMenu").addClass("showMenu");
+    $("#hamburgerIcon").addClass("showBurger");
   });
   $("#closeIcon").click(function () {
     // remove classes from all
     $("#mobileMenu").removeClass("showMenu");
+    $("#hamburgerIcon").removeClass("showBurger");
   });
 });
 

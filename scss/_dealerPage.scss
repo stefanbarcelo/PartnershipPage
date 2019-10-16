@@ -40,6 +40,7 @@
         border: 1px solid $SKY;
         background: $SKY;
         color: white;
+        scroll-behavior: smooth;
 
         &:hover {
           background: rgb(51, 156, 255);
@@ -292,6 +293,7 @@
 #inspectionTitle {
   background: $STONE;
   padding: 150px 3em 150px;
+  scroll-behavior: smooth;
 
   h2 {
     color: white;
@@ -1156,6 +1158,7 @@
 // FORM
 #widgetForm {
   padding: 150px 0;
+  scroll-behavior: smooth;
 
   .wrapper {
     max-width: 940px;

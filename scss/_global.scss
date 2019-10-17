@@ -416,6 +416,7 @@ nav {
     #closeIcon {
       cursor: pointer;
       float: right;
+      width: 15px;
     }
 
     .menuList {
@@ -479,7 +480,7 @@ nav {
 }
 
 .showBurger {
-  transform: translatex(200%);
+  transform: translatex(300%);
 }
 
 .mobileHide {

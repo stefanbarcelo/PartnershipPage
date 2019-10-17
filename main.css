@@ -566,6 +566,7 @@ nav .navInner .hamIcon {
 .mobileMenu .menuWrapper #closeIcon {
   cursor: pointer;
   float: right;
+  width: 15px;
 }
 
 .mobileMenu .menuWrapper .menuList {
@@ -633,8 +634,8 @@ nav .navInner .hamIcon {
 }
 
 .showBurger {
-  -webkit-transform: translatex(200%);
-          transform: translatex(200%);
+  -webkit-transform: translatex(300%);
+          transform: translatex(300%);
 }
 
 .mobileHide {
@@ -806,6 +807,7 @@ nav .navInner .hamIcon {
   border: 1px solid #00c3ff;
   background: #00c3ff;
   color: white;
+  scroll-behavior: smooth;
 }
 
 #header .headerContent .headerText .mainBtn:hover {
@@ -1079,6 +1081,7 @@ nav .navInner .hamIcon {
 #inspectionTitle {
   background: #191919;
   padding: 150px 3em 150px;
+  scroll-behavior: smooth;
 }
 
 #inspectionTitle h2 {
@@ -1965,6 +1968,7 @@ nav .navInner .hamIcon {
 
 #widgetForm {
   padding: 150px 0;
+  scroll-behavior: smooth;
 }
 
 #widgetForm .wrapper {

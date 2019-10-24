@@ -14,6 +14,7 @@
         data-api-token="36068c76c43925db7c516460090cb27c"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 
 
     <title>Document</title>
@@ -30,7 +31,8 @@
                     <li><a href="index.html" class="coolLink">Home</a></li>
                     <li><a href="reportInfo.html" class="coolLink">The Report</a></li>
                     <li><a href="tel: 1 (888) 838-9466" class="coolLink">Call Us</a></li>
-                    <li><a href="https://true360reports.com/product/request-true360-inspection/" target="_blank" class="coolLink">Request Inspection</a></li>
+                    <li><a href="https://true360reports.com/product/request-true360-inspection/" target="_blank"
+                            class="coolLink">Request Inspection</a></li>
                 </ul>
                 <div class="hamIcon" id="hamburgerIcon">
                     <img src="./images/hamburgerIcon.svg" alt="">
@@ -49,7 +51,8 @@
                     <hr>
                     <li><a href="tel: 1 (888) 838-9466">Call Us</a></li>
                     <hr>
-                    <li><a href="https://true360reports.com/product/request-true360-inspection/" target="_blank">Request Inspection</a></li>
+                    <li><a href="https://true360reports.com/product/request-true360-inspection/" target="_blank">Request
+                            Inspection</a></li>
                     <hr>
                 </ul>
                 <a href="termsOfService.html" class="littleLink">Terms of Service</a>
@@ -230,12 +233,15 @@
                 <div class="container">
                     <h2 class="faq-accordion">How do consumers see the report?</h2>
                     <div class="faq-panel">
-                        <p>Consumers can see the report from vehicle listings. Our widgets are on these listings which serve as a click through to see the True360 Report.</p>
+                        <p>Consumers can see the report from vehicle listings. Our widgets are on these listings which
+                            serve as a click through to see the True360 Report.</p>
                     </div>
 
                     <h2 class="faq-accordion">How long does it take to upload to CarFax and AutoCheck?</h2>
                     <div class="faq-panel">
-                        <p>Uploading to CarFax and AutoCheck is typically 1 to 2 business days. Once it's uploaded our information from our inspection is added to the carfax report and a LiveLink is added as well. </p>
+                        <p>Uploading to CarFax and AutoCheck is typically 1 to 2 business days. Once it's uploaded our
+                            information from our inspection is added to the carfax report and a LiveLink is added as
+                            well. </p>
                     </div>
 
                     <h2 class="faq-accordion">Is the Vehicle Inspection Report available 24/7 online?</h2>
@@ -281,7 +287,7 @@
                     Company | ©2019 TrueFrame LLC. All Rights Reserved.</p>
             </div>
         </footer>
-        
+
     </div>
 
     <!-- FUNCTION JS SCRIPTS -->
@@ -297,17 +303,19 @@
             },
             mounted: function () {
                 console.info("hello/1")
-            },
-            methods: {
-
             }
-        })
+        });
     </script>
     <script>
         window.sr = ScrollReveal({ reset: true });
         sr.reveal('.reveal', { opacity: 0, duration: 1000, reset: false }); 
     </script>
-
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 2000,
+            offset: '70px'
+        });
+    </script>
 </body>
 
 </html>

@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="main.css">
     <script src="https://connect.podium.com/widget.js" id="podium-widget"
         data-api-token="36068c76c43925db7c516460090cb27c"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
 
     <title>True360 | Partnership Page</title>
 </head>
@@ -24,7 +26,8 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="reportInfo.html">The Report</a></li>
                     <li><a href="tel: 1 (888) 838-9466">Call Us</a></li>
-                    <li><a href="https://true360reports.com/product/request-true360-inspection/" target="_blank">Request Inspection</a></li>
+                    <li><a href="https://true360reports.com/product/request-true360-inspection/" target="_blank">Request
+                            Inspection</a></li>
                 </ul>
                 <div class="hamIcon" id="hamburgerIcon">
                     <img src="./images/hamburgerIcon.svg" alt="">
@@ -42,7 +45,8 @@
                     <hr>
                     <li><a href="tel: 1 (888) 838-9466">Call Us</a></li>
                     <hr>
-                    <li><a href="https://true360reports.com/product/request-true360-inspection/" target="_blank">Request Inspection</a></li>
+                    <li><a href="https://true360reports.com/product/request-true360-inspection/" target="_blank">Request
+                            Inspection</a></li>
                     <hr>
                 </ul>
                 <a href="termsOfService.html" class="littleLink">Terms of Service</a>
@@ -61,7 +65,7 @@
                         and
                         tools
                         to trade-for, purchase and retail the vehicles.</p>
-                    <div><a href="#inspectionTitle" class="mainBtn">Our Inspection process</a></div>
+                    <div><a data-scroll href="#inspectionTitle" class="mainBtn">Our Inspection process</a></div>
                 </div>
                 <!-- <div class="mouseContainer">
                     <div class="mouse"></div>
@@ -623,11 +627,18 @@
         sr.reveal('.scaleUp', { opacity: 0, duration: 1000, scale: .85, reset: false });
         sr.reveal('.animate', config);
         // setting different delays
-        sr.reveal('.animate.right', { delay: 0, origin: 'right', distance: '20px', scale: 0 })
-        sr.reveal('.animate.left', { delay: 0, origin: 'left', distance: '20px', scale: 0 })
-        sr.reveal('.animate.bottom', { delay: 500 })
-        sr.reveal('.animate.three', { delay: 1000 })
+        sr.reveal('.animate.right', { delay: 0, origin: 'right', distance: '20px', scale: 0 });
+        sr.reveal('.animate.left', { delay: 0, origin: 'left', distance: '20px', scale: 0 });
+        sr.reveal('.animate.bottom', { delay: 500 });
+        sr.reveal('.animate.three', { delay: 1000 });
 
+    </script>
+
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]',{
+            speed: 1000,
+            offset: '80px'
+        });
     </script>
 </body>
 

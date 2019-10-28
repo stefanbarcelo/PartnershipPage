@@ -5,620 +5,591 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="./images/true360Favicon.png">
     <link rel="stylesheet" href="https://use.typekit.net/rry0kyy.css">
     <link rel="stylesheet" href="main.css">
     <script src="https://connect.podium.com/widget.js" id="podium-widget"
         data-api-token="36068c76c43925db7c516460090cb27c"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="showNav.js"></script>
+    <script src="script.js"></script>
 
-    <link rel="icon" 
-      type="image/png" 
-      href="./images/true360Favicon.png">
     <title>True360 | The Car Inspection Company</title>
 </head>
 
 <body>
-
-    <div id="app">
-        <!-- NAVIGATION-->
-        <nav id="nav">
-            <div class="navInner wrapper">
-                <a href="index.html"><img src="./images/mainLogo.svg" alt="" class="navLogo"></a>
-                <ul class="navLinkList">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="reportInfo.html">The Report</a></li>
-                    <li><a href="tel: 1 (888) 838-9466">Call Us</a></li>
-                    <li><a href="https://true360reports.com/product/request-true360-inspection/" target="_blank">Request
-                            Inspection</a></li>
-                </ul>
-                <div class="hamIcon" id="hamburgerIcon">
-                    <img src="./images/hamburgerIcon.svg" alt="">
-                </div>
-            </div>
-        </nav>
-        <div class="mobileMenu" id="mobileMenu">
-            <div class="menuWrapper">
-                <img class="darkLogo" src="./images/darkLogo.svg" alt="">
-                <img id="closeIcon" src="./images/closeIcon.svg" class="closeIcon" alt="">
-                <ul class="menuList">
-                    <li><a href="index.html">Home</a></li>
-                    <hr>
-                    <li><a href="reportInfo.html">The Report</a></li>
-                    <hr>
-                    <li><a href="tel: 1 (888) 838-9466">Call Us</a></li>
-                    <hr>
-                    <li><a href="https://true360reports.com/product/request-true360-inspection/" target="_blank">Request
-                            Inspection</a></li>
-                    <hr>
-                </ul>
-                <a href="termsOfService.html" class="littleLink">Terms of Service</a>
-                <a href="privacyPolicy.html" class="littleLink">Privacy Policy</a>
-                <article>From everybody at True360, we look forward to starting a partnership with you. | True360 is a
-                    TrueFrame Company | ©2019 TrueFrame LLC. All Rights Reserved.</article>
+    <!-- NAVIGATION-->
+    <nav id="nav">
+        <div class="navInner wrapper">
+            <a href="index.html"><img src="./images/mainLogo.svg" alt="" class="navLogo"></a>
+            <ul class="navLinkList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reportInfo.html">The Report</a></li>
+                <li><a href="tel: 1 (888) 838-9466">Call Us</a></li>
+                <li><a href="https://true360reports.com/product/request-true360-inspection/" target="_blank">Request
+                        Inspection</a></li>
+            </ul>
+            <div class="hamIcon" id="hamburgerIcon">
+                <img src="./images/hamburgerIcon.svg" alt="">
             </div>
         </div>
+    </nav>
+    <div class="mobileMenu" id="mobileMenu">
+        <div class="menuWrapper">
+            <img class="darkLogo" src="./images/darkLogo.svg" alt="">
+            <img id="closeIcon" src="./images/closeIcon.svg" class="closeIcon" alt="">
+            <ul class="menuList">
+                <li><a href="index.html">Home</a></li>
+                <hr>
+                <li><a href="reportInfo.html">The Report</a></li>
+                <hr>
+                <li><a href="tel: 1 (888) 838-9466">Call Us</a></li>
+                <hr>
+                <li><a href="https://true360reports.com/product/request-true360-inspection/" target="_blank">Request
+                        Inspection</a></li>
+                <hr>
+            </ul>
+            <a href="termsOfService.html" class="littleLink">Terms of Service</a>
+            <a href="privacyPolicy.html" class="littleLink">Privacy Policy</a>
+            <article>From everybody at True360, we look forward to starting a partnership with you. | True360 is a
+                TrueFrame Company | ©2019 TrueFrame LLC. All Rights Reserved.</article>
+        </div>
+    </div>
 
-        <!--HERO CONTENT -->
-        <header id="header">
-            <div class="headerContent">
-                <div class="headerText animate two">
-                    <h1>Selling With <a style="font-weight: 800"> Confidence</a></h1>
-                    <p>17% of use vehicles have documented accident/damage history. True360 Dealers have the knowledge
-                        and
-                        tools
-                        to trade-for, purchase and retail the vehicles.</p>
-                    <div><a data-scroll href="#inspectionTitle" class="mainBtn">Our Inspection process</a></div>
-                </div>
-                <!-- <div class="mouseContainer">
+    <!--HERO CONTENT -->
+    <header id="header">
+        <div class="headerContent">
+            <div class="headerText animate two">
+                <h1>Selling With <a style="font-weight: 800"> Confidence</a></h1>
+                <p>17% of use vehicles have documented accident/damage history. True360 Dealers have the knowledge
+                    and
+                    tools
+                    to trade-for, purchase and retail the vehicles.</p>
+                <div><a data-scroll href="#inspectionTitle" class="mainBtn">Our Inspection process</a></div>
+            </div>
+            <!-- <div class="mouseContainer">
                     <div class="mouse"></div>
                     <div class="scroll"></div>
                 </div> -->
-            </div>
-            <div class="headerBg scaleUp">
-                <img src="./images/true360Sticker.png" alt="" class="badge">
-            </div>
-        </header>
+        </div>
+        <div class="headerBg scaleUp">
+            <img src="./images/true360Sticker.png" alt="" class="badge">
+        </div>
+    </header>
 
-        <!-- INFO BANNER -->
-        <div id="infoBanner">
-            <div class="infoGrid wrapper">
-                <div class="animate bottom">
-                    <h1>200,000+</h1>
-                    <p>Inspections completed</p>
-                </div>
-                <div class="animate bottom">
-                    <h1>1500+</h1>
-                    <p>Partnered dealers</p>
-                </div>
-                <div class="animate bottom">
-                    <h1>100+</h1>
-                    <p>Certified technicians</p>
-                </div>
+    <!-- INFO BANNER -->
+    <div id="infoBanner">
+        <div class="infoGrid wrapper">
+            <div class="animate bottom">
+                <h1>200,000+</h1>
+                <p>Inspections completed</p>
+            </div>
+            <div class="animate bottom">
+                <h1>1500+</h1>
+                <p>Partnered dealers</p>
+            </div>
+            <div class="animate bottom">
+                <h1>100+</h1>
+                <p>Certified technicians</p>
             </div>
         </div>
-
-        <!-- WHY WE STARTED -->
-        <div class="aboutUs wrapper">
-            <div><img src="./images/reportDropShadow.png" alt=""></div>
-            <div class="whyWeStarted">
-                <h2><a>We deliver</a> true transparency</h2>
-                <p>We’re the company that created the TrueFrame Inspection.
-                    The Report was developed to help Dealerships retail these
-                    types of vehicles with confidence. Our reports are always
-                    LiveLinked with CarFax and AutoCheck once completed.</p>
-                <a href="https://admin.trueframe.com/view-report/en/gaUGdsUzNQjuO4IV5kmR" class="mainBtn"
-                    target="_blank">See Sample Report</a>
-            </div>
-        </div>
-
-        <!-- INSPECTION PROCESS -->
-        <div id="inspectionTitle">
-            <div class="wrapper2">
-                <h2><a style="font-weight: 300">Our industry standard </a>inspection process</h2>
-                <h4>Exceeding all expectations</h4>
-                <p>As a True360 Dealer, you will be provided with the dedicated support staff which
-                    includes an account executive as well as a group of in market Certified Automotive
-                    Inspectors who are dispatched on demand as needed.</p>
-            </div>
-        </div>
-        <div id="inspectionSteps">
-            <div class="stepsGrid wrapper">
-                <div class="stepsImages animate bottom">
-                    <img src="./images/carPaint.png" alt="">
-                    <img src="./images/carInterior.png" alt="">
-                </div>
-                <div class="stepsInfo animate right hideOverflow">
-                    <h3>Preliminary evaluation and paint metering</h3>
-                    <p>First we do a thorough and hands on preliminary vehicle walk around evaluation of the overall
-                        condition. After, we do a complete metering of all paint surfaces and finish, both outside and
-                        inside the vehicle structure.</p>
-                </div>
-            </div>
-            <div class="stepsGrid wrapper">
-                <div class="stepsImages animate bottom">
-                    <img src="./images/structure.png" alt="">
-                    <img src="./images/sketch.png" alt="">
-                </div>
-                <div class="stepsInfo animate right hideOverflow">
-                    <h3>Structural Inspection</h3>
-                    <p>We inspect the complete uni-body, structure, or frame of the vehicle to be sure it is within the
-                        manufacturers specifications. This includes the vehicles center rails,
-                        floor pan, inner rockers, and cross member.</p>
-                </div>
-            </div>
-            <div class="stepsGrid wrapper">
-                <div class="stepsImages animate three">
-                    <img src="./images/theReport.png" alt="">
-                    <img src="./images/certificate.png" alt="">
-                </div>
-                <div class="stepsInfo animate right hideOverflow">
-                    <h3>The True360 Report</h3>
-                    <p>Our detailed report is uploaded to both CARFAX and AutoCheck daily. It's an easy to read four
-                        page document that comes complete with the vehicle's certificate of integrity. Each report is
-                        automatically delivered to you.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- NEUTRALIZE ACCIDENT HISTORY -->
-        <div class="carBg">
-            <div class="beforeAfter wrapper">
-                <div class="beforeAfterInfo">
-                    <h4>Becoming proactive</h4>
-                    <h2><a style="font-weight: 300;">We Neutralize</a> accident history</h2>
-                    <p>Historically we’ve documented that 72%
-                        of all vehicles inspected with accident history have only sustained minor damage. After a
-                        True360
-                        inspection is completed, “Found very minor damage repairs” often populates the 2nd line of the
-                        CarFax.
-                        Look right to see example.</p>
-                </div>
-                <div id="slider" class="beforeAfterSlider">
-                    <div id="sliderContents" class="sliderContent">
-                        <div class="slide active">
-                            <p>Before: <a style="font-weight: 700;">"Accident Reported"</a></p>
-                            <img src="./images/iphoneBefore.png" alt="">
-                        </div>
-                        <div class="slide">
-                            <p>After: <a style="font-weight: 700;">"Minor Damage Repairs"</a></p>
-                            <img src="./images/iphoneAfter.png" alt="">
-                        </div>
-                    </div>
-                    <div id="prev" class="arrowBtn">
-                        <a><svg width="36" height="36" viewBox="0 0 30 30">
-                                <g id="leftArrow" transform="translate(1430 2001) rotate(180)">
-                                    <circle id="Ellipse_1" data-name="Ellipse 1" cx="15" cy="15" r="15"
-                                        transform="translate(1400 1971)" fill="#2e71f2" />
-                                    <path id="Path_26" data-name="Path 26" d="M3401.96,1876.674l7.565-5.2-7.565-5.2Z"
-                                        transform="translate(-1989.96 114.217)" fill="#fff" />
-                                </g>
-                            </svg></a>
-                    </div>
-                    <div id="next" class="arrowBtn">
-                        <a><svg width="36" height="36" viewBox="0 0 30 30">
-                                <g id="rightArrow" transform="translate(-1400 -1971)">
-                                    <circle id="Ellipse_1" data-name="Ellipse 1" cx="15" cy="15" r="15"
-                                        transform="translate(1400 1971)" fill="#2e71f2" />
-                                    <path id="Path_26" data-name="Path 26" d="M3401.96,1876.674l7.565-5.2-7.565-5.2Z"
-                                        transform="translate(-1989.96 114.217)" fill="#fff" />
-                                </g>
-                            </svg></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- DEALERS & BUYERS -->
-        <div id="reportPerks" class="wrapper">
-            <h4>Connecting to Clients</h4>
-            <h2><a style="font-weight: 300">Our vehicle inspection reports are for </a> dealers, and buyers.</h2>
-            <div class="perkGrid">
-                <div class="animate left">
-                    <img src="./images/happySalesTeam.png" alt="">
-                    <div class="verticalBorder"></div>
-                </div>
-                <div class="perkContent animate three">
-                    <span class="borderSpan">Offering Transparency Sells</span>
-                    <h3>The True360 Report</h3>
-                    <p>Is the only 3rd party unbiased vehicle inspection that LiveLinks to your Website, CarFax, and
-                        AutoCheck. When we say it’s minor, it’s minor! Providing this open transparency with the Report,
-                        it will increase customer engagement online, which leads to more confirmed showroom appointments
-                        and
-                        vehicle sales.</p>
-
-                    <h3>Vehicle choice validation confirmed</h3>
-                    <p>Even when the store is closed, we’re working 24/7. Our report will answer any question of concern
-                        while your customer is shopping online.</p>
-
-                    <h3>Protecting your brand and reputation</h3>
-                    <p>Every inspection comes with our buyback guaranty. You will never retail a vehicle without the
-                        knowledge to sell in complete transparency.</p>
-                </div>
-
-
-                <div class="perkContent animate three" style="margin-top: 30px;">
-                    <img class="mobileShow" src="./images/happyCustomers.png" alt="">
-                    <span class="borderSpan">Customers Want All Available Information</span>
-                    <h3>No uncertainty with vehicle history</h3>
-                    <p>Granting customers the true extent of a vehicles damage history and condition with True360
-                        reports displays transparency.</p>
-
-                    <h3>Creating a sense of security</h3>
-                    <p>Buyers are more willing to purchase your products when there’s added social proofing to your
-                        establishments products. We as consumers do this with dining options, online products, etc.
-                        Used vehicles require a thoroughly done inspection so consumers don’t feel cheated if anything
-                        wrong happens with their vehicle post purchase and instead feel secure.</p>
-
-                    <h3>Frictionless transaction</h3>
-                    <p>When you provide all the necessary information consumers need to make their final buying
-                        decision, you make that decision for them.</p>
-                </div>
-                <div class="mobileHide animate right">
-                    <img src="./images/happyCustomers.png" alt="" style="margin-top: 30px;">
-                    <div class="verticalBorder"></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- TRUE360 WIDGETS -->
-        <div id="widgets">
-            <div class="wrapper">
-                <div>
-                    <h4>True360 SRP and VDP LiveLinks</h4>
-                    <h2><a style="font-weight: 300;">Converting online shoppers <a>into Now Buyers</h2>
-                    <p>How do consumers find the report? As part of being a True360 partner we place our search results
-                        page
-                        (SRP)
-                        widget and vehicle display page (VDP) widget on your site. Our comprehensive report is
-                        LiveLinked to
-                        both
-                        widgets so consumers can find them easily.</p>
-                    <div class="widgetVideo">
-                        <div>
-                            <video preload="auto" autoplay playsinline loop muted>
-                                <source src="./images/SRPWidget.mp4" type='video/mp4'>
-                            </video>
-                        </div>
-                        <div>
-                            <video preload="auto" autoplay playsinline loop muted>
-                                <source src="./images/VDPWidget.mp4" type='video/mp4'>
-                            </video>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mediaGrid">
-                    <div class="gridContent">
-                        <span class="borderSpan">Brand New</span>
-                        <h3>Inspection Request Widget</h3>
-                        <p>This widget is used for online customers who are interested in a vehicle you’re
-                            selling but would like an inspection done to ensure their vehicle choice.</p>
-                    </div>
-                    <div class="gridMedia">
-                        <video preload="auto" autoplay playsinline loop muted>
-                            <source src="./images/InspectionRequest.mp4" type='video/mp4'>
-                        </video>
-                    </div>
-                </div>
-
-                <div class="mediaGrid">
-                    <div class="gridContent">
-                        <span class="borderSpan">Know Who's Interested</span>
-                        <h3>It's a Live Lead Generator</h3>
-                        <p>We email you the information users put in which you can then use to follow up with them,
-                            making
-                            it a fantastic lead generator for your dealership.</p>
-                    </div>
-                    <div class="gridMedia">
-                        <video preload="auto" autoplay playsinline loop muted>
-                            <source src="./images/widgetEmail.mp4" type='video/mp4'>
-                        </video>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- SIGN UP NOW -->
-        <div id="signUpBar">
-            <div class="wrapper">
-                <p>True360 Partnership&nbsp;<a style="opacity: .4">- Widget Form<a></p>
-                <a href="#widgetForm" class="partnerBtn">
-                    <span>Partner Up</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.92 10.91">
-                        <defs>
-                            <style>
-                                .cls-1 {
-                                    fill: #fff;
-                                }
-                            </style>
-                        </defs>
-                        <title>whiteArrow</title>
-                        <g id="Layer_2" data-name="Layer 2">
-                            <g id="Layer_1-2" data-name="Layer 1">
-                                <polygon class="cls-1" style="fill: white"
-                                    points="16.92 5.45 11.47 10.91 10.4 9.85 14.05 6.2 0 6.2 0 4.7 14.05 4.7 10.4 1.06 11.47 0 16.92 5.45" />
-                            </g>
-                        </g>
-                    </svg>
-                </a>
-            </div>
-        </div>
-
-        <!-- ANALYTICS -->
-        <div id="analytics">
-            <div class="wrapper2">
-                <h2>Delivering analytics for your dealership <a style="font-weight: 800;">every month.</a></h2>
-                <h4>Powered by Google</h4>
-                <p>Every month we let you know exactly what True360 Reports are providing for your dealership. We tell
-                    you
-                    everything from widget click to how long consumers are staying engaged on our report page.</p>
-            </div>
-            <img src="./images/analyticsPage.png" alt="" class="analyticsPage animate bottom">
-            <div class="list wrapper2 animate right hideOverflow">
-                <div class="listItem">
-                    <div class="svg">
-                        <img src="./images/clock.svg" alt="">
-                    </div>
-                    <div class="info">
-                        <h3>Average time viewing report</h3>
-                        <p>We're able to track how long online consumers engage on our reports that are linked to your
-                            vehicle listings.</p>
-                    </div>
-                </div>
-                <div class="listItem">
-                    <div class="svg">
-                        <img src="./images/widget.svg" alt="">
-                    </div>
-                    <div class="info">
-                        <h3>Widget clicks</h3>
-                        <p>How many people are online engaging with your vehicle listings.</p>
-                    </div>
-                </div>
-                <div class="listItem">
-                    <div class="svg">
-                        <img src="./images/deviceActivity.svg" alt="">
-                    </div>
-                    <div class="info">
-                        <h3>Activity by device</h3>
-                        <p>How exactly consumers are reaching our report through their preference of device.</p>
-                    </div>
-                </div>
-                <div class="listItem">
-                    <div class="svg">
-                        <img src="./images/vehiclesSold.svg" alt="">
-                    </div>
-                    <div class="info">
-                        <h3>Vehicles sold</h3>
-                        <p>We track exactly how long it take for vehicles to be sold after our inspection is conducted.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- IPAD MOCKUP-->
-        <div class="ipadMockup">
-        </div>
-
-        <!-- TRAINING -->
-        <div id="training" class="wrapper">
-            <div class="wrapper2">
-                <h4>Training Made Simple</h4>
-                <h2>Me make sure learning is <br><a style="font-weight: 800;">fun, fast, and easy.</a></h2>
-            </div>
-            <div class="trainingGrid">
-                <div class="trainingStep">
-                    <img src="./images/rocket.svg" alt="">
-                    <h3>How we start</h3>
-                    <p>Your dedicated True360 Account Executive will contact you to gather all dealership on-boarding
-                        materials and digital asset requirements.</p>
-                </div>
-                <div>
-                    <hr>
-                </div>
-                <div class="trainingStep">
-                    <img src="./images/person.svg" alt="">
-                    <h3>Who we need</h3>
-                    <p>We find the in store leader along with crew members to coordinate the best time to train the BDC
-                        and
-                        sales staff.</p>
-                </div>
-                <div>
-                    <hr>
-                </div>
-                <div class="trainingStep">
-                    <img src="./images/money.svg" alt="">
-                    <h3>Train and make sales</h3>
-                    <p>We explain the importance of educating a customer through the unbiased inspection report so it
-                        leads
-                        to more vehicle sales.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- OUR PARTNERS -->
-        <div id="ourPartners">
-            <div class="wrapper">
-                <div class="titleGrid">
-                    <div class="wrapper2">
-                        <h4>Nationwide services</h4>
-                        <h2>We deliver only the best service for <a style="font-weight: 800;">our partners</a></h2>
-                        <p>True360 technicians are located in every city, ready to take on all services our partners
-                            need at
-                            a moments notice.</p>
-                    </div>
-                    <div class="animate up hideOverflow"><img src="./images/map.png" alt="" class="map"></div>
-                </div>
-
-                <div class="partnersGrid">
-                    <div class="animate bottom"><img src="./images/autoNation.png" alt=""></div>
-                    <div class="animate bottom"><img src="./images/autocheckLogo.png" alt=""></div>
-                    <div class="animate bottom"><img src="./images/carFaxLogo.png" alt=""></div>
-                    <div class="animate bottom"><img src="./images/lithia.png" alt=""></div>
-                    <div class="animate bottom"><img src="./images/sixtLogo.png" alt=""></div>
-                    <div class="animate bottom"><img src="./images/sonicLogo.png" alt=""></div>
-                    <div class="animate bottom"><img src="./images/acvLogo.png" alt=""></div>
-                    <div class="animate bottom"><img src="./images/berkShire.png" alt=""></div>
-                    <div class="animate bottom"><img src="./images/hendricksAutomotive.png" alt=""></div>
-                    <div class="animate bottom"><img src="./images/napletonNissan.png" alt=""></div>
-                    <div class="animate bottom"><img src="./images/offLeaseOnly.png" alt=""></div>
-                    <div class="animate bottom"><img src="./images/dallasLeaseReturns.png" alt=""></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- WIDGET FORM -->
-        <div id="widgetForm">
-            <div class="widgetTitle wrapper hideOverflow">
-                <div>
-                    <h4>Widget Authorization form</h4>
-                    <h1>Lets start selling <span style="font-weight: 800">more cars.</span></h1>
-                </div>
-                <div>
-                    <p>I hereby authorize TrueFrame to include their Vehicle Display Page (VDP) and Search Results Page
-                        (SRP)
-                        Widget from the attached Instructional Form to our website.
-                        Further, I authorize TrueFrame employees and contractors to speak with our I.T. team to assist
-                        and
-                        answer questions about the Widget on the below referenced domain. </p>
-                </div>
-            </div>
-            <main>
-                <form id="formApp" class="formWrapper" @submit="checkForm" action="https://vuejs.org/" method="post"
-                    novalidate="true">
-
-                    <h4>account information</h4>
-                    <fieldset class="animate bottom">
-
-                        <div class="inputText">
-                            <label class="inputLabel">Dealer Name</label>
-                            <input placeholder="John Doe Auto" id="dealerName" v-model="dealerName" type="text"
-                                name="ame">
-                        </div>
-
-                        <div class="inputText">
-                            <label class="inputLabel">Domain Name</label>
-                            <input placeholder="http://johndoeauto.com" id="url" v-model="url" type="url" name="url">
-                        </div>
-
-                        <div class="inputText">
-                            <label class="inputLabel">Print Name</label>
-                            <input placeholder="John Doe" id="printName" v-model="printName" type="text"
-                                name="printName">
-                        </div>
-
-                        <div class="inputText">
-                            <label class="inputLabel">Position</label>
-                            <input placeholder="CEO" id="position" v-model="position" type="text" name="position">
-                        </div>
-
-                        <div class="inputText">
-                            <label class="inputLabel">Authorized Signature</label>
-                            <input placeholder="John Doe" id="signature" v-model="signature" type="text"
-                                name="signature">
-                        </div>
-
-
-                    </fieldset>
-
-                    <h4>website provider information</h4>
-                    <fieldset class="animate bottom">
-
-                        <div class="inputText">
-                            <label class="inputLabel">Web Development Company</label>
-                            <input placeholder="Web Development LLC" id="devCompany" v-model="devCompany" type="text"
-                                name="devCompany">
-                        </div>
-
-                        <div class="inputText">
-                            <label class="inputLabel">Contact Name</label>
-                            <input placeholder="Who we need to talk to" id="conName" v-model="conName" type="text"
-                                name="conName">
-                        </div>
-
-                        <div class="inputText">
-                            <label class="inputLabel">Contact Phone Number</label>
-                            <input placeholder="+1 (888) 123-4567" id="conNumber" v-model="conNumber" type="number"
-                                name="conNumber">
-                        </div>
-
-                        <div class="inputText">
-                            <label class="inputLabel">Contact Email Address</label>
-                            <input placeholder="john.doe@email.com" id="conEmail" v-model="conEmail" type="email"
-                                name="conEmail">
-                        </div>
-
-                    </fieldset>
-
-                    <p v-if="errors.length">
-                        <ul>
-                            <li style="color: red" v-for="error in errors">{{ error }}</li>
-                            <li style="color: blue" v-for="success">{{ success }}</li>
-                        </ul>
-                    </p>
-
-                    <div class="submitSec">
-                        <div class="checkBoxContainer">
-                            <input type="checkbox" name="checkBox">
-                            <span class="checkMark"></span>
-                            <label>I hereby state that I am okay sharing this use of my personal information with
-                                TrueFrame LLC.</label>
-                        </div>
-                        <input class="mainBtn" type="submit" value="submit">
-
-                    </div>
-
-                </form>
-            </main>
-        </div>
-
-        <!-- FOOTER -->
-        <footer id="mainFooter">
-            <div class="footerGrid wrapper">
-                <div>
-                    <h4>About <span style="color: rgb(0, 166, 255)">True360</span></h4>
-                    <p>
-                        True360 is a Live Inspection Platform providing the most comprehensive cosmetic and structural
-                        report available.
-                    </p>
-                </div>
-                <div>
-                    <h4>Frequently Asked Questions</h4>
-                    <p>
-                        Have any questions about our certified inspections? Head to our FAQ page for more information.
-                    </p>
-                </div>
-                <div>
-                    <h4>Disclaimer</h4>
-                    <a href="termsOfService.html">Terms Of Service</a>
-                    <a href="privacyPolicy.html">Privacy Policy</a>
-                </div>
-                <div>
-                    <h4>Contact Us</h4>
-                    <a href="tel: +1 (888) 838-9466">+1 (888) 838-9466</a>
-                    <a href="https://trueframe.com/" target="_blank">www.trueframe.com</a>
-                </div>
-            </div>
-
-            <div class="disclaimer wrapper">
-                <p>From everybody at True360, we look forward to starting a partnership with you. | True360 is a
-                    TrueFrame
-                    Company | ©2019 TrueFrame LLC. All Rights Reserved.</p>
-            </div>
-        </footer>
     </div>
+
+    <!-- WHY WE STARTED -->
+    <div class="aboutUs wrapper">
+        <div><img src="./images/reportDropShadow.png" alt=""></div>
+        <div class="whyWeStarted">
+            <h2><a>We deliver</a> true transparency</h2>
+            <p>We’re the company that created the TrueFrame Inspection.
+                The Report was developed to help Dealerships retail these
+                types of vehicles with confidence. Our reports are always
+                LiveLinked with CarFax and AutoCheck once completed.</p>
+            <a href="https://admin.trueframe.com/view-report/en/gaUGdsUzNQjuO4IV5kmR" class="mainBtn"
+                target="_blank">See Sample Report</a>
+        </div>
+    </div>
+
+    <!-- INSPECTION PROCESS -->
+    <div id="inspectionTitle">
+        <div class="wrapper2">
+            <h2><a style="font-weight: 300">Our industry standard </a>inspection process</h2>
+            <h4>Exceeding all expectations</h4>
+            <p>As a True360 Dealer, you will be provided with the dedicated support staff which
+                includes an account executive as well as a group of in market Certified Automotive
+                Inspectors who are dispatched on demand as needed.</p>
+        </div>
+    </div>
+    <div id="inspectionSteps">
+        <div class="stepsGrid wrapper">
+            <div class="stepsImages animate bottom">
+                <img src="./images/carPaint.png" alt="">
+                <img src="./images/carInterior.png" alt="">
+            </div>
+            <div class="stepsInfo animate right hideOverflow">
+                <h3>Preliminary evaluation and paint metering</h3>
+                <p>First we do a thorough and hands on preliminary vehicle walk around evaluation of the overall
+                    condition. After, we do a complete metering of all paint surfaces and finish, both outside and
+                    inside the vehicle structure.</p>
+            </div>
+        </div>
+        <div class="stepsGrid wrapper">
+            <div class="stepsImages animate bottom">
+                <img src="./images/structure.png" alt="">
+                <img src="./images/sketch.png" alt="">
+            </div>
+            <div class="stepsInfo animate right hideOverflow">
+                <h3>Structural Inspection</h3>
+                <p>We inspect the complete uni-body, structure, or frame of the vehicle to be sure it is within the
+                    manufacturers specifications. This includes the vehicles center rails,
+                    floor pan, inner rockers, and cross member.</p>
+            </div>
+        </div>
+        <div class="stepsGrid wrapper">
+            <div class="stepsImages animate three">
+                <img src="./images/theReport.png" alt="">
+                <img src="./images/certificate.png" alt="">
+            </div>
+            <div class="stepsInfo animate right hideOverflow">
+                <h3>The True360 Report</h3>
+                <p>Our detailed report is uploaded to both CARFAX and AutoCheck daily. It's an easy to read four
+                    page document that comes complete with the vehicle's certificate of integrity. Each report is
+                    automatically delivered to you.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- NEUTRALIZE ACCIDENT HISTORY -->
+    <div class="carBg">
+        <div class="beforeAfter wrapper">
+            <div class="beforeAfterInfo">
+                <h4>Becoming proactive</h4>
+                <h2><a style="font-weight: 300;">We Neutralize</a> accident history</h2>
+                <p>Historically we’ve documented that 72%
+                    of all vehicles inspected with accident history have only sustained minor damage. After a
+                    True360
+                    inspection is completed, “Found very minor damage repairs” often populates the 2nd line of the
+                    CarFax.
+                    Look right to see example.</p>
+            </div>
+            <div id="slider" class="beforeAfterSlider">
+                <div id="sliderContents" class="sliderContent">
+                    <div class="slide active">
+                        <p>Before: <a style="font-weight: 700;">"Accident Reported"</a></p>
+                        <img src="./images/iphoneBefore.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <p>After: <a style="font-weight: 700;">"Minor Damage Repairs"</a></p>
+                        <img src="./images/iphoneAfter.png" alt="">
+                    </div>
+                </div>
+                <div id="prev" class="arrowBtn">
+                    <a><svg width="36" height="36" viewBox="0 0 30 30">
+                            <g id="leftArrow" transform="translate(1430 2001) rotate(180)">
+                                <circle id="Ellipse_1" data-name="Ellipse 1" cx="15" cy="15" r="15"
+                                    transform="translate(1400 1971)" fill="#2e71f2" />
+                                <path id="Path_26" data-name="Path 26" d="M3401.96,1876.674l7.565-5.2-7.565-5.2Z"
+                                    transform="translate(-1989.96 114.217)" fill="#fff" />
+                            </g>
+                        </svg></a>
+                </div>
+                <div id="next" class="arrowBtn">
+                    <a><svg width="36" height="36" viewBox="0 0 30 30">
+                            <g id="rightArrow" transform="translate(-1400 -1971)">
+                                <circle id="Ellipse_1" data-name="Ellipse 1" cx="15" cy="15" r="15"
+                                    transform="translate(1400 1971)" fill="#2e71f2" />
+                                <path id="Path_26" data-name="Path 26" d="M3401.96,1876.674l7.565-5.2-7.565-5.2Z"
+                                    transform="translate(-1989.96 114.217)" fill="#fff" />
+                            </g>
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DEALERS & BUYERS -->
+    <div id="reportPerks" class="wrapper">
+        <h4>Connecting to Clients</h4>
+        <h2><a style="font-weight: 300">Our vehicle inspection reports are for </a> dealers, and buyers.</h2>
+        <div class="perkGrid">
+            <div class="animate left">
+                <img src="./images/happySalesTeam.png" alt="">
+                <div class="verticalBorder"></div>
+            </div>
+            <div class="perkContent animate three">
+                <span class="borderSpan">Offering Transparency Sells</span>
+                <h3>The True360 Report</h3>
+                <p>Is the only 3rd party unbiased vehicle inspection that LiveLinks to your Website, CarFax, and
+                    AutoCheck. When we say it’s minor, it’s minor! Providing this open transparency with the Report,
+                    it will increase customer engagement online, which leads to more confirmed showroom appointments
+                    and
+                    vehicle sales.</p>
+
+                <h3>Vehicle choice validation confirmed</h3>
+                <p>Even when the store is closed, we’re working 24/7. Our report will answer any question of concern
+                    while your customer is shopping online.</p>
+
+                <h3>Protecting your brand and reputation</h3>
+                <p>Every inspection comes with our buyback guaranty. You will never retail a vehicle without the
+                    knowledge to sell in complete transparency.</p>
+            </div>
+
+
+            <div class="perkContent animate three" style="margin-top: 30px;">
+                <img class="mobileShow" src="./images/happyCustomers.png" alt="">
+                <span class="borderSpan">Customers Want All Available Information</span>
+                <h3>No uncertainty with vehicle history</h3>
+                <p>Granting customers the true extent of a vehicles damage history and condition with True360
+                    reports displays transparency.</p>
+
+                <h3>Creating a sense of security</h3>
+                <p>Buyers are more willing to purchase your products when there’s added social proofing to your
+                    establishments products. We as consumers do this with dining options, online products, etc.
+                    Used vehicles require a thoroughly done inspection so consumers don’t feel cheated if anything
+                    wrong happens with their vehicle post purchase and instead feel secure.</p>
+
+                <h3>Frictionless transaction</h3>
+                <p>When you provide all the necessary information consumers need to make their final buying
+                    decision, you make that decision for them.</p>
+            </div>
+            <div class="mobileHide animate right">
+                <img src="./images/happyCustomers.png" alt="" style="margin-top: 30px;">
+                <div class="verticalBorder"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TRUE360 WIDGETS -->
+    <div id="widgets">
+        <div class="wrapper">
+            <div>
+                <h4>True360 SRP and VDP LiveLinks</h4>
+                <h2><a style="font-weight: 300;">Converting online shoppers <a>into Now Buyers</h2>
+                <p>How do consumers find the report? As part of being a True360 partner we place our search results
+                    page
+                    (SRP)
+                    widget and vehicle display page (VDP) widget on your site. Our comprehensive report is
+                    LiveLinked to
+                    both
+                    widgets so consumers can find them easily.</p>
+                <div class="widgetVideo">
+                    <div>
+                        <video preload="auto" autoplay playsinline loop muted>
+                            <source src="./images/SRPWidget.mp4" type='video/mp4'>
+                        </video>
+                    </div>
+                    <div>
+                        <video preload="auto" autoplay playsinline loop muted>
+                            <source src="./images/VDPWidget.mp4" type='video/mp4'>
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mediaGrid">
+                <div class="gridContent">
+                    <span class="borderSpan">Brand New</span>
+                    <h3>Inspection Request Widget</h3>
+                    <p>This widget is used for online customers who are interested in a vehicle you’re
+                        selling but would like an inspection done to ensure their vehicle choice.</p>
+                </div>
+                <div class="gridMedia">
+                    <video preload="auto" autoplay playsinline loop muted>
+                        <source src="./images/InspectionRequest.mp4" type='video/mp4'>
+                    </video>
+                </div>
+            </div>
+
+            <div class="mediaGrid">
+                <div class="gridContent">
+                    <span class="borderSpan">Know Who's Interested</span>
+                    <h3>It's a Live Lead Generator</h3>
+                    <p>We email you the information users put in which you can then use to follow up with them,
+                        making
+                        it a fantastic lead generator for your dealership.</p>
+                </div>
+                <div class="gridMedia">
+                    <video preload="auto" autoplay playsinline loop muted>
+                        <source src="./images/widgetEmail.mp4" type='video/mp4'>
+                    </video>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SIGN UP NOW -->
+    <div id="signUpBar">
+        <div class="wrapper">
+            <p>True360 Partnership&nbsp;<a style="opacity: .4">- Widget Form<a></p>
+            <a href="#widgetForm" class="partnerBtn">
+                <span>Partner Up</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.92 10.91">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #fff;
+                            }
+                        </style>
+                    </defs>
+                    <title>whiteArrow</title>
+                    <g id="Layer_2" data-name="Layer 2">
+                        <g id="Layer_1-2" data-name="Layer 1">
+                            <polygon class="cls-1" style="fill: white"
+                                points="16.92 5.45 11.47 10.91 10.4 9.85 14.05 6.2 0 6.2 0 4.7 14.05 4.7 10.4 1.06 11.47 0 16.92 5.45" />
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- ANALYTICS -->
+    <div id="analytics">
+        <div class="wrapper2">
+            <h2>Delivering analytics for your dealership <a style="font-weight: 800;">every month.</a></h2>
+            <h4>Powered by Google</h4>
+            <p>Every month we let you know exactly what True360 Reports are providing for your dealership. We tell
+                you
+                everything from widget click to how long consumers are staying engaged on our report page.</p>
+        </div>
+        <img src="./images/analyticsPage.png" alt="" class="analyticsPage animate bottom">
+        <div class="list wrapper2 animate right hideOverflow">
+            <div class="listItem">
+                <div class="svg">
+                    <img src="./images/clock.svg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Average time viewing report</h3>
+                    <p>We're able to track how long online consumers engage on our reports that are linked to your
+                        vehicle listings.</p>
+                </div>
+            </div>
+            <div class="listItem">
+                <div class="svg">
+                    <img src="./images/widget.svg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Widget clicks</h3>
+                    <p>How many people are online engaging with your vehicle listings.</p>
+                </div>
+            </div>
+            <div class="listItem">
+                <div class="svg">
+                    <img src="./images/deviceActivity.svg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Activity by device</h3>
+                    <p>How exactly consumers are reaching our report through their preference of device.</p>
+                </div>
+            </div>
+            <div class="listItem">
+                <div class="svg">
+                    <img src="./images/vehiclesSold.svg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Vehicles sold</h3>
+                    <p>We track exactly how long it take for vehicles to be sold after our inspection is conducted.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- IPAD MOCKUP-->
+    <div class="ipadMockup">
+    </div>
+
+    <!-- TRAINING -->
+    <div id="training" class="wrapper">
+        <div class="wrapper2">
+            <h4>Training Made Simple</h4>
+            <h2>Me make sure learning is <br><a style="font-weight: 800;">fun, fast, and easy.</a></h2>
+        </div>
+        <div class="trainingGrid">
+            <div class="trainingStep">
+                <img src="./images/rocket.svg" alt="">
+                <h3>How we start</h3>
+                <p>Your dedicated True360 Account Executive will contact you to gather all dealership on-boarding
+                    materials and digital asset requirements.</p>
+            </div>
+            <div>
+                <hr>
+            </div>
+            <div class="trainingStep">
+                <img src="./images/person.svg" alt="">
+                <h3>Who we need</h3>
+                <p>We find the in store leader along with crew members to coordinate the best time to train the BDC
+                    and
+                    sales staff.</p>
+            </div>
+            <div>
+                <hr>
+            </div>
+            <div class="trainingStep">
+                <img src="./images/money.svg" alt="">
+                <h3>Train and make sales</h3>
+                <p>We explain the importance of educating a customer through the unbiased inspection report so it
+                    leads
+                    to more vehicle sales.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- OUR PARTNERS -->
+    <div id="ourPartners">
+        <div class="wrapper">
+            <div class="titleGrid">
+                <div class="wrapper2">
+                    <h4>Nationwide services</h4>
+                    <h2>We deliver only the best service for <a style="font-weight: 800;">our partners</a></h2>
+                    <p>True360 technicians are located in every city, ready to take on all services our partners
+                        need at
+                        a moments notice.</p>
+                </div>
+                <div class="animate up hideOverflow"><img src="./images/map.png" alt="" class="map"></div>
+            </div>
+
+            <div class="partnersGrid">
+                <div class="animate bottom"><img src="./images/autoNation.png" alt=""></div>
+                <div class="animate bottom"><img src="./images/autocheckLogo.png" alt=""></div>
+                <div class="animate bottom"><img src="./images/carFaxLogo.png" alt=""></div>
+                <div class="animate bottom"><img src="./images/lithia.png" alt=""></div>
+                <div class="animate bottom"><img src="./images/sixtLogo.png" alt=""></div>
+                <div class="animate bottom"><img src="./images/sonicLogo.png" alt=""></div>
+                <div class="animate bottom"><img src="./images/acvLogo.png" alt=""></div>
+                <div class="animate bottom"><img src="./images/berkShire.png" alt=""></div>
+                <div class="animate bottom"><img src="./images/hendricksAutomotive.png" alt=""></div>
+                <div class="animate bottom"><img src="./images/napletonNissan.png" alt=""></div>
+                <div class="animate bottom"><img src="./images/offLeaseOnly.png" alt=""></div>
+                <div class="animate bottom"><img src="./images/dallasLeaseReturns.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WIDGET FORM -->
+    <div id="widgetForm">
+        <div class="widgetTitle wrapper hideOverflow">
+            <div>
+                <h4>Widget Authorization form</h4>
+                <h1>Lets start selling <span style="font-weight: 800">more cars.</span></h1>
+            </div>
+            <div>
+                <p>I hereby authorize TrueFrame to include their Vehicle Display Page (VDP) and Search Results Page
+                    (SRP)
+                    Widget from the attached Instructional Form to our website.
+                    Further, I authorize TrueFrame employees and contractors to speak with our I.T. team to assist
+                    and
+                    answer questions about the Widget on the below referenced domain. </p>
+            </div>
+        </div>
+        <main>
+            <form id="formApp" class="formWrapper" action="https://formspree.io/meqjrqjj" method="POST">
+                <h4>account information</h4>
+                <fieldset class="animate bottom">
+                    <div class="inputText">
+                        <label for="name" class="inputLabel">Dealer Name</label>
+                        <input type="text" placeholder="John Doe Auto" name="dealer-name">
+                    </div>
+
+                    <div class="inputText">
+                        <label class="inputLabel">Domain Name</label>
+                        <input placeholder="http://johndoeauto.com" type="url" name="website">
+                    </div>
+
+                    <div class="inputText">
+                        <label class="inputLabel">Print Name</label>
+                        <input placeholder="John Doe" type="text" name="full-name">
+                    </div>
+
+                    <div class="inputText">
+                        <label class="inputLabel">Title</label>
+                        <input placeholder="CEO" type="text" name="title">
+                    </div>
+
+                    <div class="inputText">
+                        <label class="inputLabel">Authorized Signature</label>
+                        <input placeholder="John Doe" type="text" name="signature">
+                    </div>
+                </fieldset>
+
+                <h4>website provider information</h4>
+                <fieldset class="animate bottom">
+                    <div class="inputText">
+                        <label class="inputLabel">Web Development Company</label>
+                        <input placeholder="Web Development LLC" type="text" name="development-company">
+                    </div>
+
+                    <div class="inputText">
+                        <label class="inputLabel">Contact Name</label>
+                        <input placeholder="Who we need to talk to" type="text" name="contact-name">
+                    </div>
+
+                    <div class="inputText">
+                        <label class="inputLabel">Contact Phone Number</label>
+                        <input placeholder="+1 (888) 123-4567" type="number" name="contact-number">
+                    </div>
+
+                    <div class="inputText">
+                        <label class="inputLabel" for="email">Contact Email Address</label>
+                        <input placeholder="john.doe@email.com" type="email" name="_replyto">
+                    </div>
+                </fieldset>
+
+                <div class="submitSec">
+                    <div class="checkBoxContainer">
+                        <input type="checkbox" name="checkBox">
+                        <span class="checkMark"></span>
+                        <label>I hereby state that I am okay sharing this use of my personal information with
+                            TrueFrame LLC.</label>
+                    </div>
+                    <button class="mainBtn" type="submit" value="Send">Submit</button>
+                </div>
+
+            </form>
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="mainFooter">
+        <div class="footerGrid wrapper">
+            <div>
+                <h4>About <span style="color: rgb(0, 166, 255)">True360</span></h4>
+                <p>
+                    True360 is a Live Inspection Platform providing the most comprehensive cosmetic and structural
+                    report available.
+                </p>
+            </div>
+            <div>
+                <h4>Frequently Asked Questions</h4>
+                <p>
+                    Have any questions about our certified inspections? Head to our FAQ page for more information.
+                </p>
+            </div>
+            <div>
+                <h4>Disclaimer</h4>
+                <a href="termsOfService.html">Terms Of Service</a>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+            </div>
+            <div>
+                <h4>Contact Us</h4>
+                <a href="tel: +1 (888) 838-9466">+1 (888) 838-9466</a>
+                <a href="https://trueframe.com/" target="_blank">www.trueframe.com</a>
+            </div>
+        </div>
+
+        <div class="disclaimer wrapper">
+            <p>From everybody at True360, we look forward to starting a partnership with you. | True360 is a
+                TrueFrame
+                Company | ©2019 TrueFrame LLC. All Rights Reserved.</p>
+        </div>
+    </footer>
 
 
     <!-- FUNCTION JS SCRIPTS -->
-    <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="showNav.js"></script>
-    <script src="script.js"></script>
-    <script src="formProcess.js"></script>
-
     <script>
         window.sr = ScrollReveal({ reset: false });
         var config = {
@@ -637,7 +608,7 @@
     </script>
 
     <script>
-        var scroll = new SmoothScroll('a[href*="#"]',{
+        var scroll = new SmoothScroll('a[href*="#"]', {
             speed: 1000,
             offset: '70px'
         });
